@@ -1,10 +1,7 @@
 - hosts: all
   tasks:
-  - name: Install httpd
-    yum:
-      name: httpd
-      state: present 
-  - name: Start the httpd service 
-    service:
-      name: httpd
-      state: stopped 
+  - set_stats:
+      data:
+        targetAdDomain: "{{ gt }}"
+        samAccountName: "{{ atse }}"
+    
