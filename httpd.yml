@@ -1,7 +1,5 @@
 - hosts: localhost
   tasks:
-  - set_stats:
-      data:
-        targetAdDomain: "{{ gt }}"
-        samAccountName: "{{ atse }}"
-    
+  - name: Setting host facts using complex arguments
+    set_fact:
+      one_fact: something
