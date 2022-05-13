@@ -1,7 +1,5 @@
 - hosts: all
   tasks:
     - import_role:
-        name: my_namespace.my_collection.role1
+        name: geerlingguy.php_roles
 
-    - my_namespace.mycollection.mymodule:
-        option1: value
