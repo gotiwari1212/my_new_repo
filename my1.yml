@@ -1,4 +1,4 @@
 - hosts: all
   tasks:
-    - my_namespace.my_collection.mymodule:
-        option1: value
+    - geerlingguy.php_roles:
+        option1: valuegeerlingguy.php_roles
