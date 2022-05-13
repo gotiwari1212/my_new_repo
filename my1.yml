@@ -5,6 +5,3 @@
 
     - my_namespace.mycollection.mymodule:
         option1: value
-
-    - debug:
-        msg: '{{ lookup("my_namespace.my_collection.lookup1", 'param1')| my_namespace.my_collection.filter1 }}'
