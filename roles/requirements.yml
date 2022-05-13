@@ -1,0 +1,4 @@
+- hosts: all
+  tasks:
+    - my_namespace.my_collection.mymodule:
+        option1: value
