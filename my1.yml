@@ -1,10 +1,4 @@
 - hosts: all
   tasks:
-    - import_role:
-        name: my_namespace.my_collection.role1
-
-    - my_namespace.mycollection.mymodule:
+    - my_namespace.my_collection.mymodule:
         option1: value
-
-    - debug:
-        msg: '{{ lookup("my_namespace.my_collection.lookup1", 'param1')| my_namespace.my_collection.filter1 }}'
