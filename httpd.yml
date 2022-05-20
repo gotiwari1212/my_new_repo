@@ -1,3 +1,5 @@
-- hosts: localhost
+---
+- name: finding host fact 
+  hosts: localhost
   tasks:
   - debug: msg="the custome {{ansible_local.git}}"
