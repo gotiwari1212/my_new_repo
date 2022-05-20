@@ -1,5 +1,5 @@
 - hosts: localhost
   tasks:
   - name: Setting host facts using complex arguments
-    set_fact:
-      one_fact: something
+    debug:
+      msg: "the custome {{ansible_local.git}}"
